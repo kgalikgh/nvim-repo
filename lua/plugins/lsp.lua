@@ -17,9 +17,19 @@ return {
           { name = 'nvim_lsp' },
         },
         mapping = cmp.mapping.preset.insert({
+          -- Open completion menu
           ['<C-Space>'] = cmp.mapping.complete(),
+
+          -- Prev/Next item on a list
+          ['<C-p>'] = cmp.mapping.select_prev_item({behavior = 'select'}),
+          ['<C-n>'] = cmp.mapping.select_next_item({behavior = 'select'}),
+
+          -- Scroll the dompletion docs
           ['<C-u>'] = cmp.mapping.scroll_docs(-4),
           ['<C-d>'] = cmp.mapping.scroll_docs(4),
+
+          -- Confirm choice
+          ['<CR>'] = cmp.mapping.confirm({select = false}),
         }),
         snippet = {
           expand = function(args)

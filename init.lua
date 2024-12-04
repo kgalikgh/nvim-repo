@@ -1,5 +1,8 @@
--- Order does matter
-require("config.set")
+-- Set Neovim vanilla opts
+require("config.vim_opts")
+
+-- Init Lazy 
 require("config.lazy")
-require("config.mappings")
-require("config.after")
+
+-- Add mappings
+require("config.vanilla_keymaps")
