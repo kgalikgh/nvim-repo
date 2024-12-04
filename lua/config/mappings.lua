@@ -1,2 +1,5 @@
+-- Clear search highlight
 vim.keymap.set('n', '<Esc>', "<cmd>nohlsearch<cr>")
-vim.keymap.set('n', '<C-t>', "<cmd>Ex<cr>")
+ 
+-- Open netwr
+vim.keymap.set('n', 'tt', "<cmd>Ex<cr>")
