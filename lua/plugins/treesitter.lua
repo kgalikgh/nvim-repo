@@ -6,12 +6,12 @@ return {
     configs.setup({
       ensure_installed = {
         "c",
-        "lua",
-        "vim",
-        "vimdoc",
-        "rust",
         "cmake",
         "cpp",
+        "lua",
+        "rust",
+        "vim",
+        "vimdoc",
       },
       sync_install = false,
       auto_install = true,
